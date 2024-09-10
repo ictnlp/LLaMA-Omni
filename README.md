@@ -9,7 +9,7 @@
 
 LLaMA-Omni is a speech-language model built upon Llama-3.1-8B-Instruct. It supports low-latency and high-quality speech interactions, simultaneously generating both text and speech responses based on speech instructions.
 
-![](images/model.png)
+<div align="center"><img src="images/model.png" width="75%"/></div>
 
 ## 💡 Highlights
 

@@ -21,6 +21,8 @@ LLaMA-Omni is a speech-language model built upon Llama-3.1-8B-Instruct. It suppo
 
 ♻️ **Trained in less than 3 days using just 4 GPUs.**
 
+https://github.com/user-attachments/assets/2b097af8-47d7-494f-b3b3-6be17ca0247a
+
 ## Install
 
 1. Clone this repository.
@@ -89,6 +91,8 @@ python -m omni_speech.serve.model_worker --host 0.0.0.0 --controller http://loca
 ```
 
 4. Visit [http://localhost:8000/](http://localhost:8000/) and interact with LLaMA-3.1-8B-Omni!
+
+**Note: Due to the instability of streaming audio playback in Gradio, we have only implemented streaming audio synthesis without enabling autoplay. If you have a good solution, feel free to submit a PR. Thanks!**
 
 ## Local Inference
 

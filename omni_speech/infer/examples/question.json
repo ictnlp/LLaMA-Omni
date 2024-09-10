@@ -1,0 +1,102 @@
+[
+    {
+        "id": "helpful_base_1",
+        "speech": "omni_speech/infer/examples/question_wav/helpful_base_1.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "helpful_base_2",
+        "speech": "omni_speech/infer/examples/question_wav/helpful_base_2.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "helpful_base_3",
+        "speech": "omni_speech/infer/examples/question_wav/helpful_base_3.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "helpful_base_4",
+        "speech": "omni_speech/infer/examples/question_wav/helpful_base_4.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "helpful_base_5",
+        "speech": "omni_speech/infer/examples/question_wav/helpful_base_5.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "vicuna_1",
+        "speech": "omni_speech/infer/examples/question_wav/vicuna_1.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "vicuna_2",
+        "speech": "omni_speech/infer/examples/question_wav/vicuna_2.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "vicuna_3",
+        "speech": "omni_speech/infer/examples/question_wav/vicuna_3.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "vicuna_4",
+        "speech": "omni_speech/infer/examples/question_wav/vicuna_4.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    },
+    {
+        "id": "vicuna_5",
+        "speech": "omni_speech/infer/examples/question_wav/vicuna_5.wav",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "<speech>\nPlease directly answer the questions in the user's speech."
+            }
+        ]
+    }
+]

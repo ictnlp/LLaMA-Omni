@@ -1,8 +1,8 @@
-# 🎧 LLaMA-Omni: Seamless Speech Interaction with Large Language Models
+# 🦙🎧 LLaMA-Omni: Seamless Speech Interaction with Large Language Models
 
 > **Authors: [Qingkai Fang](https://fangqingkai.github.io/), [Shoutao Guo](https://scholar.google.com/citations?hl=en&user=XwHtPyAAAAAJ), [Yan Zhou](https://zhouyan19.github.io/zhouyan/), [Zhengrui Ma](https://scholar.google.com.hk/citations?user=dUgq6tEAAAAJ), [Shaolei Zhang](https://zhangshaolei1998.github.io/), [Yang Feng*](https://people.ucas.edu.cn/~yangfeng?language=en)**
 
-[![arXiv](https://img.shields.io/badge/arXiv-xxxx.xxxxx-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/xxxx.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-2409.06666-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.06666)
 [![model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging_Face-Model-blue.svg)](https://huggingface.co/ICTNLP/Llama-3.1-8B-Omni)
 [![code](https://img.shields.io/badge/Github-Code-keygen.svg?logo=github)](https://github.com/ictnlp/LLaMA-Omni)
 
@@ -13,13 +13,13 @@ LLaMA-Omni is a speech-language model built upon Llama-3.1-8B-Instruct. It suppo
 
 ## 💡 Highlights
 
-💪 **Built on Llama-3.1-8B-Instruct, ensuring high-quality responses.**
+- 💪 **Built on Llama-3.1-8B-Instruct, ensuring high-quality responses.**
 
-🚀 **Low-latency speech interaction with a latency as low as 226ms.**
+- 🚀 **Low-latency speech interaction with a latency as low as 226ms.**
 
-🎧 **Simultaneous generation of both text and speech responses.**
+- 🎧 **Simultaneous generation of both text and speech responses.**
 
-♻️ **Trained in less than 3 days using just 4 GPUs.**
+- ♻️ **Trained in less than 3 days using just 4 GPUs.**
 
 https://github.com/user-attachments/assets/2b097af8-47d7-494f-b3b3-6be17ca0247a
 
@@ -116,7 +116,7 @@ If our work is useful for you, please cite as:
 @article{fang-etal-2024-llama-omni,
   title={LLaMA-Omni: Seamless Speech Interaction with Large Language Models},
   author={Fang, Qingkai and Guo, Shoutao and Zhou, Yan and Ma, Zhengrui and Zhang, Shaolei and Feng, Yang},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2409.06666},
   year={2024}
 }
 ```

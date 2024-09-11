@@ -180,13 +180,6 @@ conv_llama_2 = Conversation(
     sep2="</s>",
 )
 
-try:
-    from transformers import AutoTokenizer
-    llama3_tokenizer = AutoTokenizer.from_pretrained("/data/fangqingkai/Omni/models/LLM/Meta-Llama-3-8B-Instruct")
-except Exception as e:
-    print("Error loading llama3 tokenizer")
-    print(e)
-
 conv_llama_3 = Conversation(
     system="You are a helpful language and speech assistant. " "You are able to understand the speech content that the user provides, " "and assist the user with a variety of tasks using natural language.",
     roles=("user", "assistant"),

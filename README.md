@@ -101,6 +101,10 @@ To run inference locally, please organize the speech instruction files according
 bash omni_speech/infer/run.sh omni_speech/infer/examples
 ```
 
+## LICENSE
+
+Our code is released under the Apache-2.0 License. Our model, as it is built on Llama 3.1, is required to comply with the [Llama 3.1 License](https://llama.meta.com/llama3_1/license/).
+
 ## Acknowledgements
 
 - [LLaVA](https://github.com/haotian-liu/LLaVA): The codebase we built upon.

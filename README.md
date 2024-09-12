@@ -124,3 +124,7 @@ If our work is useful for you, please cite as:
   year={2024}
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ictnlp/llama-omni&type=Date)](https://star-history.com/#ictnlp/llama-omni&Date)

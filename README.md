@@ -57,13 +57,17 @@ pip install flash-attn --no-build-isolation
 
 ## Quick Start
 
-1. Download the `Llama-3.1-8B-Omni` model from 🤗[Huggingface](https://huggingface.co/ICTNLP/Llama-3.1-8B-Omni). 
-
-2. Download the `Whisper-large-v3` model.
+1. Install `Huggingface`.
 
 ```shell
-import whisper
-model = whisper.load_model("large-v3", download_root="models/speech_encoder/")
+pip install --upgrade huggingface_hub
+``` 
+
+2. Trigger the download script to download the `Llama-3.1-8B-Omni` model from 🤗[Huggingface](https://huggingface.co/ICTNLP/Llama-31-8B-Omni) and the `Whisper-large-v3` model.
+
+```shell
+cd LLaMA-Omni
+python Download_Models.py
 ```
 
 3. Download the unit-based HiFi-GAN vocoder.

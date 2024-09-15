@@ -57,16 +57,14 @@ pip install flash-attn --no-build-isolation
 
 ## Quick Start
 
-1. Download the `Llama-3.1-8B-Omni` model from 🤗[Huggingface](https://huggingface.co/ICTNLP/Llama-3.1-8B-Omni). 
-
-2. Download the `Whisper-large-v3` model.
+1. Trigger the download script to download the `Llama-3.1-8B-Omni` model from 🤗[Huggingface](https://huggingface.co/ICTNLP/Llama-31-8B-Omni) and the `Whisper-large-v3` model.
 
 ```shell
-import whisper
-model = whisper.load_model("large-v3", download_root="models/speech_encoder/")
+cd LLaMA-Omni
+python Download_Models.py
 ```
 
-3. Download the unit-based HiFi-GAN vocoder.
+2. Download the unit-based HiFi-GAN vocoder.
 
 ```shell
 wget https://dl.fbaipublicfiles.com/fairseq/speech_to_speech/vocoder/code_hifigan/mhubert_vp_en_es_fr_it3_400k_layer11_km1000_lj/g_00500000 -P vocoder/
@@ -87,7 +85,7 @@ python -m omni_speech.serve.gradio_web_server --controller http://localhost:1000
 
 3. Launch a model worker.
 ```shell
-python -m omni_speech.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path Llama-3.1-8B-Omni --model-name Llama-3.1-8B-Omni --s2s
+python -m omni_speech.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path ./models/Llama-3.1-8B-Omni --model-name Llama-3.1-8B-Omni --s2s
 ```
 
 4. Visit [http://localhost:8000/](http://localhost:8000/) and interact with LLaMA-3.1-8B-Omni!

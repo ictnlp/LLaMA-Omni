@@ -57,7 +57,7 @@ pip install flash-attn --no-build-isolation
 
 ## Quick Start
 
-1. Download the `Llama-3.1-8B-Omni` model from 🤗[Huggingface](https://huggingface.co/ICTNLP/Llama-3.1-8B-Omni). 
+1. Download the `Llama-3.1-8B-Omni` model from 🤗[Hugging Face](https://huggingface.co/ICTNLP/Llama-3.1-8B-Omni). 
 
 2. Download the `Whisper-large-v3` model.
 

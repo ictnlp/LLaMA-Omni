@@ -1,0 +1,50 @@
+# Configuration for Cog ⚙️
+# Reference: https://cog.run/yaml
+
+build:
+  # set to true if your model requires a GPU
+  gpu: true
+
+  # a list of ubuntu apt packages to install
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+
+  # python version in the form '3.11' or '3.11.4'
+  python_version: "3.10"
+
+  # a list of packages in the format <package-name>==<version>
+  python_packages:
+    - "torch==2.1.2"
+    - "torchvision==0.16.2"
+    - "torchaudio==2.1.2"
+    - "transformers==4.43.4"
+    - "tokenizers==0.19.1"
+    - "sentencepiece==0.1.99"
+    - "shortuuid"
+    - "accelerate==0.33.0"
+    - "peft==0.11.1"
+    - "bitsandbytes==0.43.1"
+    - "pydantic<2"
+    - "markdown2[all]"
+    - "numpy"
+    - "scikit-learn==1.2.2"
+    - "gradio_client==1.3.0"
+    - "requests"
+    - "httpx==0.27.2"
+    - "uvicorn"
+    - "fastapi"
+    - "soundfile"
+    - "einops==0.6.1"
+    - "einops-exts==0.0.4"
+    - "timm==0.6.13"
+    - "openai-whisper"
+    - "setuptools==59.5.0"
+    - "omegaconf==2.0.6"
+  run:
+    - git clone https://github.com/pytorch/fairseq && cd fairseq && pip install -e . --no-build-isolation
+    - pip install flash-attn --no-build-isolation
+    - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.8.2/pget_linux_x86_64" && chmod +x /usr/local/bin/pget
+
+# predict.py defines how predictions are run on your model
+predict: "predict.py:Predictor"

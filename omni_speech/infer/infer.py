@@ -29,19 +29,20 @@ def get_chunk(lst, n, k):
 
 # Custom dataset class
 class CustomDataset(Dataset):
-    def __init__(self, questions, tokenizer, model_config, input_type, mel_size):
+    def __init__(self, questions, tokenizer, model_config, input_type, mel_size, conv_mode):
         self.questions = questions
         self.tokenizer = tokenizer
         self.model_config = model_config
         self.input_type = input_type
         self.mel_size = mel_size
+        self.conv_mode = conv_mode
 
     def __getitem__(self, index):
         item = self.questions[index]
         speech_file = item["speech"]
         qs = item["conversations"][0]["value"]
 
-        conv = conv_templates[args.conv_mode].copy()
+        conv = conv_templates[self.conv_mode].copy()
         conv.append_message(conv.roles[0], qs)
         conv.append_message(conv.roles[1], None)
         prompt = conv.get_prompt()
@@ -79,9 +80,9 @@ def ctc_postprocess(tokens, blank):
     return hyp
 
 # DataLoader
-def create_data_loader(questions, tokenizer, model_config, input_type, mel_size, batch_size=1, num_workers=4):
+def create_data_loader(questions, tokenizer, model_config, input_type, mel_size, conv_mode, batch_size=1, num_workers=4):
     assert batch_size == 1, "batch_size must be 1"
-    dataset = CustomDataset(questions, tokenizer, model_config, input_type, mel_size)
+    dataset = CustomDataset(questions, tokenizer, model_config, input_type, mel_size, conv_mode)
     data_loader = DataLoader(dataset, batch_size=batch_size, num_workers=num_workers, shuffle=False, collate_fn=collate_fn)
     return data_loader
 
@@ -98,7 +99,7 @@ def eval_model(args):
     os.makedirs(os.path.dirname(answers_file), exist_ok=True)
     ans_file = open(answers_file, "w")
 
-    data_loader = create_data_loader(questions, tokenizer, model.config, args.input_type, args.mel_size)
+    data_loader = create_data_loader(questions, tokenizer, model.config, args.input_type, args.mel_size, args.conv_mode)
 
     for (input_ids, speech_tensor, speech_length), item in tqdm(zip(data_loader, questions), total=len(questions)):
         idx = item["id"]

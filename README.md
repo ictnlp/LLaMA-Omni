@@ -105,7 +105,16 @@ bash omni_speech/infer/run.sh omni_speech/infer/examples
 
 ## LICENSE
 
-Our code is released under the Apache-2.0 License. Our model, as it is built on Llama 3.1, is required to comply with the [Llama 3.1 License](https://llama.meta.com/llama3_1/license/).
+Our code is released under the Apache-2.0 License. Our model is intended for academic research purposes only and may **NOT** be used for commercial purposes.
+
+You are free to use, modify, and distribute this model in academic settings, provided that the following conditions are met:
+
+- **Non-commercial use**: The model may not be used for any commercial purposes.
+- **Citation**: If you use this model in your research, please cite the original work.
+
+### Commercial Use Restriction
+
+For any commercial use inquiries or to obtain a commercial license, please contact `fengyang@ict.ac.cn`.
 
 ## Acknowledgements
 

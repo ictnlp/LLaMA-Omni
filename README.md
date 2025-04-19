@@ -9,15 +9,18 @@
 [![Wisemodel](https://img.shields.io/badge/Wisemodel-Model-blue.svg)](https://www.wisemodel.cn/models/ICT_NLP/Llama-3.1-8B-Omni/)
 [![Replicate](https://replicate.com/ictnlp/llama-omni/badge)](https://replicate.com/ictnlp/llama-omni)
 
-## 🔥 News
-
-- [25/04] We release [LLaMA-Omni2](https://github.com/ictnlp/LLaMA-Omni2), a series of speech language models ranging from 0.5B to 32B parameters, offering improved response quality and speech generation quality.
-- [25/01] LLaMA-Omni is accepted at ICLR 2025! See you in Singapore!
 
 LLaMA-Omni is a speech-language model built upon Llama-3.1-8B-Instruct. It supports low-latency and high-quality speech interactions, simultaneously generating both text and speech responses based on speech instructions.
 
 <div align="center"><img src="images/model.png" width="75%"/></div>
 
+
+## 🔥 News
+
+- [25/04] We release [LLaMA-Omni2](https://github.com/ictnlp/LLaMA-Omni2), a series of speech language models ranging from 0.5B to 32B parameters, offering improved response quality and speech generation quality.
+- [25/01] LLaMA-Omni is accepted at ICLR 2025! See you in Singapore!
+
+  
 ## 💡 Highlights
 
 - 💪 **Built on Llama-3.1-8B-Instruct, ensuring high-quality responses.**

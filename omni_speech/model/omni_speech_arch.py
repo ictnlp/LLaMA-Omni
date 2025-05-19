@@ -60,7 +60,7 @@ class OmniSpeechMetaModel:
                 p.requires_grad = True
 
         if model_args.pretrain_speech_projector is not None:
-            pretrain_speech_projector_weights = torch.load(model_args.pretrain_speech_projector, map_location='cpu')
+            pretrain_speech_projector_weights = torch.load(model_args.pretrain_speech_projector, map_location='cpu', weights_only=True)
             def get_w(weights, keyword):
                 return {k.split(keyword + '.')[1]: v for k, v in weights.items() if keyword in k}
 

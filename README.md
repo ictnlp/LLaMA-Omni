@@ -17,6 +17,8 @@ LLaMA-Omni is a speech-language model built upon Llama-3.1-8B-Instruct. It suppo
 
 ## 🔥 News
 
+- [25/05] LLaMA-Omni 2 is accepted at ACL 2025 main conference!
+- [25/05] An improved version of InstructS2S-200K is publicly available at [this link](https://huggingface.co/datasets/ICTNLP/Multiturn-Speech-Conversations). We have extended it to multi-turn conversations and diversified the input speech timbres. Sorry for the long wait!
 - [25/04] We release [LLaMA-Omni2](https://github.com/ictnlp/LLaMA-Omni2), a series of speech language models ranging from 0.5B to 32B parameters, offering improved response quality and speech generation quality.
 - [25/01] LLaMA-Omni is accepted at ICLR 2025! See you in Singapore!
 

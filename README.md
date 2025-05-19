@@ -5,6 +5,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2409.06666-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.06666)
 [![code](https://img.shields.io/badge/Github-Code-keygen.svg?logo=github)](https://github.com/ictnlp/LLaMA-Omni)
 [![model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging_Face-Model-blue.svg)](https://huggingface.co/ICTNLP/Llama-3.1-8B-Omni)
+[![dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging_Face-Dataset-blue.svg)](https://huggingface.co/datasets/ICTNLP/Multiturn-Speech-Conversations)
 [![ModelScope](https://img.shields.io/badge/ModelScope-Model-blue.svg)](https://modelscope.cn/models/ICTNLP/Llama-3.1-8B-Omni)
 [![Wisemodel](https://img.shields.io/badge/Wisemodel-Model-blue.svg)](https://www.wisemodel.cn/models/ICT_NLP/Llama-3.1-8B-Omni/)
 [![Replicate](https://replicate.com/ictnlp/llama-omni/badge)](https://replicate.com/ictnlp/llama-omni)

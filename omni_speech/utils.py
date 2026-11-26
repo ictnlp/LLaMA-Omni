@@ -14,6 +14,7 @@
 #    limitations under the License.
 
 import os
+import requests
 import sys
 import torch
 import logging
